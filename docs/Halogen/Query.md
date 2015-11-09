@@ -52,7 +52,7 @@ type Request f a = forall i. (a -> i) -> f i
 Type synonym for an "request" - a request can cause effects as well as
 fetching some information from a component.
 
-In a query algebra, an action is any constructor that carries the algebra's
+In a query algebra, a request is any constructor that carries the algebra's
 type variable as the return value of a function. For example:
 
 ``` purescript
